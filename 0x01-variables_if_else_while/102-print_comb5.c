@@ -18,8 +18,8 @@ int main(void)
 		{
 			if (p < q)
 			{
-				putchar(p / 10);
-				putchar(p % 10);
+				putchar((p / 10) + 00);
+				putchar((p % 10) + 00);
 				putchar(' ');
 				putchar((q / 10) + 48);
 				putchar((q % 10) + 48);
