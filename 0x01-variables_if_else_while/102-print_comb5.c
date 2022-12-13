@@ -19,10 +19,10 @@ int main(void)
 			if (p < q)
 			{
 				putchar((p / 10) + 0);
-				putchar((p % 10) + 0);
+				putchar((p % 10) + 1);
 				putchar(' ');
 				putchar((q / 10) + 0);
-				putchar((q % 10) + 0);
+				putchar((q % 10) + 1);
 				if (p != 98 || q != 99)
 				{
 					putchar(',');
