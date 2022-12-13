@@ -18,11 +18,11 @@ int main(void)
 		{
 			if (p < q)
 			{
-				putchar((p / 10) + 0);
-				putchar((p % 10) + 1);
+				putchar((p / 10) + 48);
+				putchar((p % 10) + 48);
 				putchar(' ');
-				putchar((q / 10) + 0);
-				putchar((q % 10) + 1);
+				putchar((q / 10) + 48);
+				putchar((q % 10) + 48);
 				if (p != 98 || q != 99)
 				{
 					putchar(',');
