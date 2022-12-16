@@ -12,13 +12,13 @@ int main(void)
 
 	for (q = 1; q <= 100; q++)
 	{
-		while (q % 100 == 0)
+		if (q == 100)
 			printf("Buzz");
-		if (q % 3 == 0 && q % 5 == 0)
+		else if (q % 3 == 0 && q % 5 == 0)
 			printf("FizzBuzz");
 		else if (q % 3 == 0)
 			printf("Fizz");
-		else if (q % 5 == 0)
+		else if (q != 100 && q % 5 == 0)
 			printf("Buzz");
 		else
 			printf("%d ", q);
