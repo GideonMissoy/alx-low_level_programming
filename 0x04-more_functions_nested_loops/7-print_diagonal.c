@@ -9,6 +9,7 @@
 void print_diagonal(int n)
 {
 	int p;
+	int q;
 
 	if (n <= 0)
 		_putchar('\n');
