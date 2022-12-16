@@ -14,9 +14,9 @@ int fizz_buzz(int q)
 
 	for (q = 1; q <= 100; q++)
 	{
-		if (q % 100 == 0)
+		while (q % 100 == 0)
 			printf("Buzz");
-		else if (q % 3 == 0 && q % 5 == 0)
+		if (q % 3 == 0 && q % 5 == 0)
 			printf("FizzBuzz");
 		else if (q % 3 == 0)
 			printf("Fizz");
