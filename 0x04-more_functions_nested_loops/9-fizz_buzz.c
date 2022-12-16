@@ -10,7 +10,7 @@ int main(void)
 {
 	int q;
 
-	for (q = 1; q <= 100; q++)
+	for (q = '1'; q <= 100; q++)
 	{
 		if (q == 100)
 			printf("Buzz");
