@@ -1,14 +1,12 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * fizz_buzz - prints the numbers from 1 to 100,
+ * main - prints the numbers from 1 to 100,
  * except multiples of 3 and 5
- * @q: number to be printed
  * Return: 0
  */
 
-int fizz_buzz(int q)
+int main(void)
 {
 	int q;
 
