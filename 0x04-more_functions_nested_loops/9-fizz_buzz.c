@@ -3,7 +3,6 @@
 /**
  * main - prints the numbers from 1 to 100,
  * except multiples of 3 and 5
- * Return: 0
  */
 
 int main(void)
