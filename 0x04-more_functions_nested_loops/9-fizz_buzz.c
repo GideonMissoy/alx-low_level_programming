@@ -10,7 +10,7 @@ int main(void)
 {
 	int q;
 
-	for (q = '1'; q <= 100; q++)
+	for (q = 1; q <= 100; q++)
 	{
 		if (q % 15 == 0)
 			printf("FizzBuzz");
@@ -24,4 +24,5 @@ int main(void)
 			printf(" ");
 	}
 	printf("\n");
+	return (0);
 }
