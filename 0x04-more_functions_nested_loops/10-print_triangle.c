@@ -25,7 +25,6 @@ void print_triangle(int size)
 			for (h = 1; h <= l; h++)
 			{
 				_putchar(35);
-				_putchar(' ');
 			}
 			_putchar('\n');
 		}
