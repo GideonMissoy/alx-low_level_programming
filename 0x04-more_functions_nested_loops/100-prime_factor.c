@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	unsigned long int l, n = 612852475143;
+	int l;
+	long n = 612852475143;
 
 	for (l = 3; l < 782849; l = l + 2)
 	{
