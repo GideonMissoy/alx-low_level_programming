@@ -15,10 +15,10 @@ void puts_half(char *str)
 		index++;
 
 	if (index + 1 % 2 == 0)
-		half = (index - 1) / 2;
+		half = (index + 1) / 2;
 
 	else
-		half = (index + 1) / 2;
+		half = index / 2;
 	half++;
 
 	for (index = half; str[index] != '\0'; index++)
