@@ -23,11 +23,12 @@ int _atoi(char *s)
 			q = (q * 10) + (s[p] - '0');
 			p++;
 		}
+		if (t == 1)
 		{
 			break;
 		}
 		p++;
 	}
-	q * = r;
+	q *= r;
 	return (q);
 }
