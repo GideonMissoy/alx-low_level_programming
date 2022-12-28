@@ -16,6 +16,6 @@ void reverse_array(int *a, int n)
 	{
 		q = a[p];
 		a[p] = a[n - 1 - p];
-		a[n - 1 p] = q;
+		a[n - 1 - p] = q;
 	}
 }
