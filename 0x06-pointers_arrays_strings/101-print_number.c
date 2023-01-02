@@ -19,5 +19,5 @@ void print_number(int n)
 	p = n;
 	if (p / 10)
 		print_number(x / 10);
-	_putchar(x % 10 + '0');
+	_putchar(p % 10 + '0');
 }
