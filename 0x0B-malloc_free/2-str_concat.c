@@ -15,13 +15,18 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL)
 		p = 0;
 	else
+	{
 		for (p = 0; s1[p]; p++)
 			;
+	}
 	if (s2 == NULL)
 		q = 0;
 	else
+	{
+
 		for (q = 0; s2[q]; q++)
 			;
+	}
 	v = p + q + 1;
 	s = malloc(v * sizeof(char));
 	if (s == NULL)
