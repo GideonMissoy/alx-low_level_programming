@@ -23,7 +23,6 @@ char *str_concat(char *s1, char *s2)
 		q = 0;
 	else
 	{
-
 		for (q = 0; s2[q]; q++)
 			;
 	}
