@@ -3,7 +3,7 @@
 /**
  * int_index - searches for an integer
  * @array: pointer to an array
- * @size: number of elemments in an array
+ * @size: number of elements in an array
  * @cmp: pointer to the function to be used to compare values
  * Return: 0
  */
@@ -16,7 +16,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for (p = 0; p < size; p++)
 		{
-			q = cmp(array[i]);
+			q = cmp(array[p]);
 			if (q)
 				break;
 		}
