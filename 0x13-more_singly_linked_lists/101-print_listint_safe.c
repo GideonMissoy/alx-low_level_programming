@@ -36,21 +36,25 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t p, num = 0;
+	size_t y, num = 0;
 	const listint_t **list = NULL;
 
 	while (head != NULL)
 	{
-		for (p = 0; p < num; p++)
+		for (y = 0; y < num; y++)
 		{
-			printf("-> [%p] %d\n", (void *)head, head->n);
-			free(list);
-			return (num);
+			if (head == list[y])
+			{
+				printf("-> [%p] %d\n", (void *)head, head->n);
+				free(list);
+				return (num);
+			}
 		}
+		num++;
+		list = _r(list, num, head);
+		printf("[%p] %d\n", (void *)head, head->n);
+		head = head->next;
 	}
-	num++;
-	list = _r(list, num, head);
-	printf("[%p] %d\n", (void *)head, head->n);
-	head = head->next;
+	free(list);
 	return (num);
 }
