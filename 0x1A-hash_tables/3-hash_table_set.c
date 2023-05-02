@@ -28,8 +28,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
 
-	/* If the corresponding index in the hash table is empty,
-	 * add the node as head */
+	/**
+	 * If the corresponding index in the hash table is empty,
+	 * add the node as head
+	 */
 	if (ht->array[index] == NULL)
 	{
 		new_node->next = NULL;
