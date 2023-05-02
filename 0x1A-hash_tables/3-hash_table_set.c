@@ -13,7 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 
 	/* Check for NULL pointers and empty key strings */
-	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
+	if (ht == NULL || key == NULL || strcmp(key, "") == 0 || value == NULL)
 		return (0);
 
 	/* Calculate the index of the key in the hash table */
@@ -28,7 +28,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
 
-	/* If the corresponding index in the hash table is empty, add the node as head */
+	/* If the corresponding index in the hash table is empty,
+	 * add the node as head */
 	if (ht->array[index] == NULL)
 	{
 		new_node->next = NULL;
