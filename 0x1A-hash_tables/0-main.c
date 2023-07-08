@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "hash_tables.h"
 
 /**
@@ -9,9 +6,9 @@
  */
 int main(void)
 {
-	hast_table_t *ht;
+	hash_table_t *ht;
 
 	ht = hash_table_create(1024);
-	printf("%p\n", (void *)ht;
+	printf("%p\n", (void *)ht);
 	return (EXIT_SUCCESS);
 }
